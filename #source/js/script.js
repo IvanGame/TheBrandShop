@@ -17,3 +17,10 @@ select.onclick = function () {
     submenu.classList.toggle('open');
     arrow.classList.toggle('active');
 }
+
+let cart = document.querySelector('.cart');
+let cartWindow = document.querySelector('.cart__window');
+
+cart.onclick = function () {
+    cartWindow.classList.toggle('open');
+}
