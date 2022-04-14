@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -666,10 +667,72 @@ body {
         column-gap: 30px;
         row-gap: 40px;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-bottom: 60px;
+        //grid-auto-rows: 1fr;
+    }
+
+    &__item {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template: auto 1fr minmax(40px, auto) / 1fr;
     }
 
     &__item:hover {
         box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__item:hover .products__image {
+        background-color: #000;
+    }
+
+    &__hover {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(58, 56, 56, 0.83);
+        transition: 0.5s;
+    }
+
+    &__hover:hover {
+        opacity: 1;
+    }
+
+    &__add-to-cart {
+        position: relative;
+        align-self: center;
+        margin-bottom: 30px;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        padding: 15px 12px 14px 43px;
+    }
+
+    &__add-to-cart::before {
+        content: url(../img/cart_ico.png);
+        position: absolute;
+        top: 10px;
+        left: 12px;
+    }
+
+    &__image {
+        position: relative;
+        padding-bottom: 107%;
+    }
+
+    &__image img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
     }
 
     &__card {
@@ -678,9 +741,10 @@ body {
     &__name {
         font-size: 13px;
         line-height: 1.2;
-        font-weight: 400;
+        font-weight: 700;
         text-transform: uppercase;
         color: #222222;
+        padding: 20px 0px 15px 13px;
     }
 
     &__price {
@@ -689,8 +753,369 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         color: #f16d7f;
+        padding-left: 13px;
+    }
+
+    &__btn {
+        text-align: center;
+        margin-bottom: 110px;
     }
 
     &__button {
+        margin: 0 auto;
+        padding: 18px 20px 18px 24px;
+        font-size: 16px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        background-color: #f16d7f;
+        color: #ffffff;
+    }
+}
+
+.fa {
+    margin-left: 10px;
+}
+
+.attributes {
+    margin-bottom: 100px;
+
+    &__row {
+        display: flex;
+    }
+
+    &__sale {
+        position: relative;
+        flex: 0 1 68.666%;
+    }
+
+    &__image {
+        position: relative;
+        padding-bottom: 69%;
+    }
+
+    &__image img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    &__image::before {
+        content: "";
+        background-image: url(../img/attr_mask.png);
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    &__sale-text {
+        position: absolute;
+        z-index: 3;
+        top: 140px;
+        left: 40px;
+    }
+
+    &__sale-text p {
+        font-size: 53.7px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+    }
+
+    &__sale-text span {
+        color: #f16d7f;
+    }
+
+    &__sale-text p:last-child {
+        font-size: 32.2px;
+    }
+
+    &__items {
+        background-color: #222224;
+        flex: 0 1 33.333%;
+    }
+
+    &__item {
+        display: flex;
+        margin-top: 50px;
+        margin-right: 38px;
+    }
+
+    &__ico {
+        margin: 0px 30px 0px 36px;
+    }
+
+    &__info {
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #fbfbfb;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #fbfbfb;
+    }
+}
+
+.feedback {
+    background: url(../img/feedback_bg.jpg) 0 0/ 100% 100% no-repeat;
+    position: relative;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        height: 440px;
+    }
+
+    &__review {
+    }
+
+    &__form {
+    }
+
+    &__hr {
+        z-index: 4;
+        height: 100%;
+        width: 1px;
+        border-left: 1px solid #fff;
+    }
+}
+
+.feedback::before {
+    content: "";
+    background-image: url(../img/feedback_before.png);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.review {
+    z-index: 3;
+    flex: 0 1 50%;
+    margin-right: 70px;
+    margin-bottom: 30px;
+
+    &__row {
+        display: flex;
+    }
+
+    &__image {
+        margin-right: 25px;
+    }
+
+    &__image img {
+        border-radius: 50%;
+    }
+
+    &__text {
+        margin-top: 10px;
+    }
+
+    &__quote {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0.025em;
+        color: #222224;
+        margin-bottom: 10px;
+    }
+
+    &__author {
+        width: 100px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #222224;
+        letter-spacing: 0.025em;
+    }
+
+    &__author span {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #f16d7f;
+    }
+
+    &__slider {
+        margin-top: 40px;
+        width: 140px;
+        height: 5px;
+        position: relative;
+    }
+
+    &__slider::before,
+    &__slider::after {
+        content: "";
+        background-color: #d6d6d6;
+        position: absolute;
+        width: 30%;
+        height: 4px;
+    }
+
+    &__slider::before {
+        left: 0;
+    }
+
+    &__slider::after {
+        right: 0;
+    }
+
+    &__slider span {
+        background-color: #f16d7f;
+        position: absolute;
+        width: 30%;
+        height: 4px;
+        left: 50px;
+    }
+}
+.form {
+    z-index: 4;
+    margin-bottom: 40px;
+
+    flex: 0 1 50%;
+    text-align: center;
+
+    &__text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: none;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #222224;
+        margin-bottom: 30px;
+    }
+
+    &__text span {
+        font-size: 24px;
+        line-height: 54px;
+        text-transform: uppercase;
+    }
+
+    &__forma {
+    }
+
+    &__forma input {
+        width: 260px;
+        padding: 15px 0px 15px 25px;
+        background-color: #e1e1e1;
+        border-radius: 23px 0px 0px 23px;
+    }
+
+    &__forma button {
+        padding: 15px 20px;
+        background-color: #f16d7f;
+        border-radius: 0px 23px 23px 0px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+    }
+}
+
+.info {
+    margin-top: 100px;
+    padding-bottom: 80px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__desc {
+        width: 440px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #898989;
+        margin-top: 28px;
+    }
+
+    &__text p:first-child {
+        margin-bottom: 25px;
+    }
+
+    &__company {
+    }
+
+    &__title h4 {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #f16d7f;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+    }
+
+    &__link-first {
+        font-size: 16px;
+        line-height: 59px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #898989;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #898989;
+    }
+
+    &__information {
+    }
+
+    &__shop {
+    }
+}
+
+.footer {
+    height: 80px;
+    background-color: #e6e6e6;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__rights {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #7a7a7a;
+    }
+
+    &__icons {
     }
 }
