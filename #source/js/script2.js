@@ -17,3 +17,9 @@ select2.onclick = function () {
     submenu2.classList.toggle('open');
     arrow2.classList.toggle('active');
 }
+
+$(document).ready(function () {
+    $('.slider').slick({
+
+    });
+});

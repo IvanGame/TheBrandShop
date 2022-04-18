@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheBrand</title>
+    <title>Single Page</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://use.fontawesome.com/821afe28b5.js"></script>
 </head>
 
 <body>
@@ -420,220 +419,145 @@
         </nav>
     </div>
 </header>        <main class="content">
-            <section class="content__background background">
+            <section class="content__sp-head sp-head">
                 <div class="container">
-                    <div class="banner">
-                        <div class="banner__article">
-                            <h1 class="banner__title">THE BRAND</h1>
-                            <p class="banner__text">OF LUXERIOUS <span class="banner__span">FASHION</span></p>
+                    <div class="sp-head__row">
+                        <div class="sp-head__title">
+                            <h4>new arrivals</h4>
                         </div>
-                        <div class="banner__con">
-                            <div class="banner__image">
-                                <img src="img/main_img.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="content__categories categories">
-                <div class="container">
-                    <div class="categories__gallery gallery">
-                        <div class="gallery__items">
-                            <div class="gallery__item gallery__item-big">
-                                <a href="#" class="gallery__link">
-                                    <img src="img/cat_man.jpg" alt="">
-                                    <div class="gallery__info">
-                                        <h3 class="gallery__title">
-                                            HOT DEAL
-                                        </h3>
-                                        <p class="gallery__text">FOR MAN</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="gallery__item">
-                                <a href="#" class="gallery__link">
-                                    <img src="img/cat_wom.jpg" alt="">
-                                    <div class="gallery__info">
-                                        <h3 class="gallery__title">
-                                            30% OFFER
-                                        </h3>
-                                        <p class="gallery__text">WOMEN</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="gallery__item gallery__item-big">
-                                <a href="#" class="gallery__link">
-                                    <img src="img/cat_kid.jpg" alt="">
-                                    <div class="gallery__info">
-                                        <h3 class="gallery__title">
-                                            NEW ARRIVALS
-                                        </h3>
-                                        <p class="gallery__text">FOR KIDS</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="gallery__item">
-                                <a href="#" class="gallery__link">
-                                    <img src="img/cat_acc.jpg" alt="">
-                                    <div class="gallery__info">
-                                        <h3 class="gallery__title">
-                                            LUXIROUS & TRENDLY
-                                        </h3>
-                                        <p class="gallery__text">ACCESORIES</p>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="sp-head__breadcrumbs">
+                            <a href="index.html" class="sp-bread">home</a>
+                            <span>/</span>
+                            <a href="#" class="sp-bread">men</a>
+                            <span>/</span>
+                            <p>new arrivals</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="content__products products">
+            <section class="content__slider slider">
+
+                <div class="slider__item">
+                    <img src="img/slider_1.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider_1.jpg" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider_1.jpg" alt="">
+                </div>
+            </section>
+            <section class="content__sp-descr sp-descr">
                 <div class="container">
-                    <div class="products__article">
-                        <h3 class="products__title">
-                            Fetured Items
-                        </h3>
-                        <p class="products__text">Shop for items based on what we featured in this week</p>
+                    <div class="sp-descr__row">
+                        <div class="sp-descr__main-title">
+                            <h4>
+                                WOMEN COLLECTION
+                            </h4>
+                        </div>
+                        <div class="sp-descr__title">
+                            <h4>
+                                Moschino Cheap And Chic
+                            </h4>
+                        </div>
+                        <div class="sp-descr__article">
+                            <p>Compellingly actualize fully researched processes before proactive outsourcing.
+                                Progressively syndicate collaborative architectures before cutting-edge services.
+                                Completely visualize parallel core competencies rather than exceptional portals.</p>
+                        </div>
+                        <div class="sp-descr__material">
+                            <p class="sp-descr__mat">
+                                MATERIAL: <span>COTTON</span>
+                            </p>
+                            <p class="sp-descr__des">
+                                DESIGNER: <span>BINBURHAN</span>
+                            </p>
+                        </div>
+                        <div class="sp-descr__peice">
+                            <p>$561</p>
+                        </div>
+                        <hr class="sp-descr__hr">
+                        <div class="sp-descr__choose choose">
+                            <div class="choose__one">
+                                <h4 class="choose__title">CHOOSE COLOR</h4>
+                                <select class="choose__color" name="color" id="">
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                    <option value="white">white</option>
+                                    <option value="blue">blue</option>
+                                </select>
+                            </div>
+                            <div class="choose__two">
+                                <h4 class="choose__title">CHOOSE SIZE</h4>
+                                <select class="choose__size" name="size" id="">
+                                    <option value="XXL">XS</option>
+                                    <option value="XXL">S</option>
+                                    <option value="XXL">M</option>
+                                    <option value="XXL">L</option>
+                                    <option value="XXL">XL</option>
+                                    <option value="XXL" selected>XXL</option>
+                                </select>
+                            </div>
+                            <div class="choose__three">
+                                <h4 class="choose__title">QUANTITY</h4>
+                                <input class="choose__number" type="number" value="1" min="1">
+                            </div>
+                        </div>
+                        <div class="sp-descr__button">
+                            <a href="#" class="sp-descr__atc">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__sp-alsolike sp-alsolike">
+                <div class="container">
+                    <div class="sp-alsolike__title">
+                        <h4>You may also like</h4>
                     </div>
                     <div class="products__items">
                         <div class="products__item">
                             <a href="singlePage.html" class="products__image">
-                                <img src="img/product_1.jpg" alt="">
+                                <img src="img/sp_product_1.jpg" alt="">
                                 <div class="products__hover">
                                     <p class="products__add-to-cart">Add to cart</p>
                                 </div>
                             </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
+                            <a href="singlePage.html" class="products__name">BLAZE LEGGINGS</a>
                             <a href="singlePage.html" class="products__price">$52.00
                             </a>
                         </div>
                         <div class="products__item">
                             <a href="singlePage.html" class="products__image">
-                                <img src="img/product_2.jpg" alt="">
+                                <img src="img/sp_product_2.jpg" alt="">
                                 <div class="products__hover">
                                     <p class="products__add-to-cart">Add to cart</p>
                                 </div>
                             </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
+                            <a href="singlePage.html" class="products__name">ALEXA SWEATER</a>
                             <a href="singlePage.html" class="products__price">$52.00
                             </a>
                         </div>
                         <div class="products__item">
                             <a href="singlePage.html" class="products__image">
-                                <img src="img/product_3.jpg" alt="">
+                                <img src="img/sp_product_3.jpg" alt="">
                                 <div class="products__hover">
                                     <p class="products__add-to-cart">Add to cart</p>
                                 </div>
                             </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirtMango People
-                                T-shirtMango People
-                                T-shisinglePage.htmltMango People T-shirtMango People T-shirt</a>
+                            <a href="singlePage.html" class="products__name">AGNES TOP</a>
                             <a href="#" class="products__price">$52.00
                             </a>
                         </div>
                         <div class="products__item">
                             <a href="singlePage.html" class="products__image">
-                                <img src="img/product_4.jpg" alt="">
+                                <img src="img/sp_product_4.jpg" alt="">
                                 <div class="products__hover">
                                     <p class="products__add-to-cart">Add to cart</p>
                                 </div>
                             </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
+                            <a href="singlePage.html" class="products__name">SYLVA SWEATER</a>
                             <a href="singlePage.html" class="products__price">$52.00
                             </a>
-                        </div>
-                        <div class="products__item">
-                            <a href="singlePage.html" class="products__image">
-                                <img src="img/product_5.jpg" alt="">
-                                <div class="products__hover">
-                                    <p class="products__add-to-cart">Add to cart</p>
-                                </div>
-                            </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
-                            <a href="singlePage.html" class="products__price">$52.00
-                            </a>
-                        </div>
-                        <div class="products__item">
-                            <a href="singlePage.html" class="products__image">
-                                <img src="img/product_6.jpg" alt="">
-                                <div class="products__hover">
-                                    <p class="products__add-to-cart">Add to cart</p>
-                                </div>
-                            </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
-                            <a href="singlePage.html" class="products__price">$52.00
-                            </a>
-                        </div>
-                        <div class="products__item">
-                            <a href="singlePage.html" class="products__image">
-                                <img src="img/product_7.jpg" alt="">
-                                <div class="products__hover">
-                                    <p class="products__add-to-cart">Add to cart</p>
-                                </div>
-                            </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
-                            <a href="singlePage.html" class="products__price">$52.00
-                            </a>
-                        </div>
-                        <div class="products__item">
-                            <a href="singlePage.html" class="products__image">
-                                <img src="img/product_8.jpg" alt="">
-                                <div class="products__hover">
-                                    <p class="products__add-to-cart">Add to cart</p>
-                                </div>
-                            </a>
-                            <a href="singlePage.html" class="products__name">Mango People T-shirt</a>
-                            <a href="singlePage.html" class="products__price">$52.00
-                            </a>
-                        </div>
-                    </div>
-                    <div class="products__btn"><a href="#" class="products__button">Browse All Product <i
-                                class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
-                </div>
-            </section>
-            <section class="content__attributes attributes">
-                <div class="container">
-                    <div class="attributes__row">
-                        <div class="attributes__sale">
-                            <div class="attributes__image">
-                                <img src="img/attr.jpg" alt="">
-                            </div>
-                            <div class="attributes__sale-text">
-                                <p>30% <span>OFFER</span></p>
-                                <p>FOR WOMEN</p>
-                            </div>
-                        </div>
-                        <div class="attributes__items">
-                            <div class="attributes__item">
-                                <div class="attributes__ico">
-                                    <img src="img/attr_ico-1.svg" alt="">
-                                </div>
-                                <div class="attributes__info">
-                                    <h4 class="attributes__title">Free Delivery</h4>
-                                    <p class="attributes__text">Worldwide delivery on all. Authorit tively morph
-                                        next-generation innov tion with extensive models.</p>
-                                </div>
-                            </div>
-                            <div class="attributes__item">
-                                <div class="attributes__ico">
-                                    <img src="img/attr_ico-2.svg" alt="">
-                                </div>
-                                <div class="attributes__info">
-                                    <h4 class="attributes__title">Free Delivery</h4>
-                                    <p class="attributes__text">Worldwide delivery on all. Authorit tively morph
-                                        next-generation innov tion with extensive models.</p>
-                                </div>
-                            </div>
-                            <div class="attributes__item">
-                                <div class="attributes__ico">
-                                    <img src="img/attr_ico-3.svg" alt="">
-                                </div>
-                                <div class="attributes__info">
-                                    <h4 class="attributes__title">Free Delivery</h4>
-                                    <p class="attributes__text">Worldwide delivery on all. Authorit tively morph
-                                        next-generation innov tion with extensive models.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -758,6 +682,8 @@
         </div>
     </div>
 </footer>    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
