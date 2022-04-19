@@ -154,12 +154,34 @@ h6 {
   padding: 70px 250px 120px 250px;
   margin-bottom: 120px;
   border: 1px solid #eaeaea;
+  background-color: #fff;
+  margin-top: -85px;
+  position: relative;
+  z-index: 1;
+}
+.sp-descr__main-title {
+  border-bottom: 1px solid #eaeaea;
+  margin: 0 auto;
+  width: 150px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 15px;
 }
 .sp-descr__main-title h4 {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   color: #f16d7f;
+}
+.sp-descr__main-title::before {
+  content: "";
+  width: 63px;
+  height: 3px;
+  background-color: #ef5b70;
+  position: absolute;
+  bottom: -2px;
+  left: 28%;
+  z-index: 2;
 }
 .sp-descr__title {
   margin-bottom: 56px;
@@ -227,7 +249,23 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.sp-descr__butto {
+  display: block;
+}
+.sp-descr__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ef5b70;
+  max-width: 530px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
 .sp-descr__atc {
+  margin-left: 10px;
+  padding: 18px 0px;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
@@ -293,7 +331,13 @@ h6 {
 }
 
 .slider {
+  z-index: 1;
   position: relative;
+  background-color: #f7f7f7;
+  padding-bottom: 40px;
+}
+.slider__item {
+  text-align: center;
 }
 
 /* Слайдер */
@@ -317,25 +361,26 @@ h6 {
 /* Слайд по центру */
 /* Клонированный слайд */
 .slick-arrow {
+  margin-top: -30px;
   position: absolute;
   top: 50%;
   z-index: 10;
   font-size: 0;
-  width: 30px;
-  height: 60px;
+  width: 47px;
+  height: 47px;
 }
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   left: 0;
-  background: url("../img/left.svg") 0 0/100% no-repeat;
+  background: url("../img/left.svg") center/20% no-repeat;
   background-color: rgba(42, 42, 42, 0.14);
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/right.svg") 0 0/100% no-repeat;
+  background: url("../img/right.svg") center/20% no-repeat;
   background-color: rgba(42, 42, 42, 0.14);
 }
 

@@ -61,13 +61,37 @@ $pink: #f16d7f;
         padding: 70px 250px 120px 250px;
         margin-bottom: 120px;
         border: 1px solid #eaeaea;
+        background-color: #fff;
+        margin-top: -85px;
+        position: relative;
+        z-index: 1;
     }
 
-    &__main-title h4 {
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 700;
-        color: #f16d7f;
+    &__main-title {
+        border-bottom: 1px solid #eaeaea;
+        margin: 0 auto;
+        width: 150px;
+        padding-bottom: 10px;
+        position: relative;
+        margin-bottom: 15px;
+
+        h4 {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #f16d7f;
+        }
+    }
+
+    &__main-title::before {
+        content: "";
+        width: 63px;
+        height: 3px;
+        background-color: #ef5b70;
+        position: absolute;
+        bottom: -2px;
+        left: 28%;
+        z-index: 2;
     }
 
     &__title {
@@ -139,10 +163,21 @@ $pink: #f16d7f;
         justify-content: center;
     }
 
+    &__butto {
+        display: block;
+    }
+
     &__button {
+        display: flex;
+        border: 1px solid #ef5b70;
+        max-width: 530px;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     &__atc {
+        margin-left: 10px;
+        padding: 18px 0px;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 700;
@@ -214,7 +249,14 @@ $pink: #f16d7f;
 }
 
 .slider {
+    z-index: 1;
     position: relative;
+    background-color: #f7f7f7;
+    padding-bottom: 40px;
+
+    &__item {
+        text-align: center;
+    }
 }
 
 /* Слайдер */
@@ -251,23 +293,24 @@ $pink: #f16d7f;
 }
 // ! Стрелка */
 .slick-arrow {
+    margin-top: -30px;
     position: absolute;
     top: 50%;
     z-index: 10;
     font-size: 0;
-    width: 30px;
-    height: 60px;
+    width: 47px;
+    height: 47px;
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev {
     left: 0;
-    background: url("../img/left.svg") 0 0 / 100% no-repeat;
+    background: url("../img/left.svg") center / 20% no-repeat;
     background-color: rgba(42, 42, 42, 0.14);
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next {
     right: 0;
-    background: url("../img/right.svg") 0 0 / 100% no-repeat;
+    background: url("../img/right.svg") center / 20% no-repeat;
     background-color: rgba(42, 42, 42, 0.14);
 }
 /* Стрелка не активная */
