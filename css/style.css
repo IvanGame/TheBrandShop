@@ -519,6 +519,7 @@ body {
   display: flex;
   position: relative;
   padding: 5px 28px 5px 15px;
+  border-radius: 3px;
   background-color: #f16d7f;
 }
 .header__select-2 > li {
@@ -629,6 +630,9 @@ body {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #4f4f4f;
+}
+.submenu__link:hover {
+  color: #f16d7f;
 }
 
 .megamenu {
@@ -905,6 +909,7 @@ body {
 .arrow.active {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+  border-top: 5px solid #f16d7f;
 }
 
 .arrow-2 {
