@@ -327,3 +327,84 @@ $pink: #f16d7f;
 /* Элемент точки */
 .slick-dots li button {
 }
+
+.accordion__item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+}
+
+.accordion__link {
+    display: block;
+    font-size: 14px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #6f6e6e;
+}
+
+.accordion__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+
+.accordion__header::before {
+    content: "";
+    margin-right: 10px;
+    width: 5px;
+    height: 37px;
+    background-color: $pink;
+}
+
+.accordion__header::after {
+    // flex-shrink: 0;
+    // width: 1.25rem;
+    // height: 1.25rem;
+    // margin-left: auto;
+    // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    // background-repeat: no-repeat;
+    // background-size: 1.25rem;
+    content: "";
+    position: absolute;
+    right: 5px;
+    // transition: transform 0.2s ease-out;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #838383;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition: 0.3s;
+}
+
+.accordion__item_show .accordion__header::after,
+.accordion__item_slidedown .accordion__header::after {
+    transform: rotate(-180deg);
+    border-top: 5px solid $pink;
+}
+
+.accordion__item_show .accordion__header {
+    color: $pink;
+}
+
+.accordion__header:hover {
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__header {
+}
+
+.accordion__content {
+    padding-left: 15px;
+    padding-top: 10px;
+    background: #fff;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
