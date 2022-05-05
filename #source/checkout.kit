@@ -95,7 +95,7 @@
                                                     Please log in below
                                                 </p>
                                             </div>
-                                            <form class="accordion__register-form" action="#">
+                                            <form id="login" class="accordion__register-form" action="#">
                                                 <label for="email">
                                                     <p>email address<span>*</span></p>
                                                     <input type="email" name="" id="email">
@@ -106,11 +106,11 @@
                                                 </label>
                                                 <p class="accordion__red">* Required Fileds</p>
                                                 <div class="accordion__btns">
-                                                    <a href="#" class="accordion__login">
+                                                    <button form="login" type="submit" class="accordion__login">
                                                         <div class="accordion__login-btn">
                                                             <p>Log in</p>
                                                         </div>
-                                                    </a>
+                                                    </button>
                                                     <a href="#" class="accordion__fogot">Forgot Password ?</a>
                                                 </div>
                                             </form>
@@ -528,15 +528,15 @@
                                             <form class="accordion__register-form" action="#">
                                                 <label for="email">
                                                     <p>email address<span>*</span></p>
-                                                    <input type="email" name="" id="email">
+                                                    <input type="email" name="" id="email" required>
                                                 </label>
                                                 <label for="pas">
                                                     <p class="accordion__lmt">password<span>*</span></p>
-                                                    <input type="password" name="" id="pas">
+                                                    <input type="password" name="" id="pas" required>
                                                 </label>
                                                 <p class="accordion__red">* Required Fileds</p>
                                                 <div class="accordion__btns">
-                                                    <a href="#" class="accordion__login">
+                                                    <a href="#" type="button" class="accordion__login">
                                                         <div class="accordion__login-btn">
                                                             <p>Log in</p>
                                                         </div>
@@ -552,6 +552,8 @@
                     </div>
                 </div>
             </div>
+            <!-- @import "feedback.html" -->
+            <!-- @import "info.html" -->
         </main>
         <!-- @import "footer.html" -->
     </div>

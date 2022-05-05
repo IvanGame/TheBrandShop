@@ -112,7 +112,7 @@
                         <p>$500.00</p>
                     </div>
                     <a href="checkout.html" class="cart__chechout">checkout</a>
-                    <a href="#" class="cart__go-to-cart">go to cart</a>
+                    <a href="cart.html" class="cart__go-to-cart">go to cart</a>
                 </div>
                 <ul class="header__select-2">
                     <li>
@@ -501,7 +501,7 @@
                                                     Please log in below
                                                 </p>
                                             </div>
-                                            <form class="accordion__register-form" action="#">
+                                            <form id="login" class="accordion__register-form" action="#">
                                                 <label for="email">
                                                     <p>email address<span>*</span></p>
                                                     <input type="email" name="" id="email">
@@ -512,11 +512,11 @@
                                                 </label>
                                                 <p class="accordion__red">* Required Fileds</p>
                                                 <div class="accordion__btns">
-                                                    <a href="#" class="accordion__login">
+                                                    <button form="login" type="submit" class="accordion__login">
                                                         <div class="accordion__login-btn">
                                                             <p>Log in</p>
                                                         </div>
-                                                    </a>
+                                                    </button>
                                                     <a href="#" class="accordion__fogot">Forgot Password ?</a>
                                                 </div>
                                             </form>
@@ -934,15 +934,15 @@
                                             <form class="accordion__register-form" action="#">
                                                 <label for="email">
                                                     <p>email address<span>*</span></p>
-                                                    <input type="email" name="" id="email">
+                                                    <input type="email" name="" id="email" required>
                                                 </label>
                                                 <label for="pas">
                                                     <p class="accordion__lmt">password<span>*</span></p>
-                                                    <input type="password" name="" id="pas">
+                                                    <input type="password" name="" id="pas" required>
                                                 </label>
                                                 <p class="accordion__red">* Required Fileds</p>
                                                 <div class="accordion__btns">
-                                                    <a href="#" class="accordion__login">
+                                                    <a href="#" type="button" class="accordion__login">
                                                         <div class="accordion__login-btn">
                                                             <p>Log in</p>
                                                         </div>
@@ -958,7 +958,114 @@
                     </div>
                 </div>
             </div>
-        </main>
+<section class="content__feedback feedback">
+    <div class="container">
+        <div class="feedback__row">
+            <div class="feedback__review review">
+                <div class="review__row">
+                    <div class="review__image">
+                        <img src="img/review_img.jpg" alt="">
+                    </div>
+                    <div class="review__text">
+                        <p class="review__quote">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                        </p>
+                        <p class="review__author">
+                            <span>Bin Burhan</span>
+                            Dhaka, Bd
+                        </p>
+                        <a href="#">
+                            <div class="review__slider">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="feedback__hr"></div>
+            <div class="feedback__form form">
+                <div class="form__text">
+                    <p>
+                        <span>Subscribe</span> <br>
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </p>
+                </div>
+                <div class="form__forma">
+                    <form action="">
+                        <input type="email" placeholder="Enter Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="content__info info">
+    <div class="container">
+        <div class="info__row">
+            <div class="info__desc">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logotype"><img src="img/logo.png" alt="" srcset="">
+                        <p>BRAN<span>D</span></p>
+                    </a>
+                </div>
+                <div class="info__text">
+                    <p>Objectively transition extensive data rather than cross functional solutions.
+                        Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                        Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    </p>
+                    <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically
+                        optimize.</p>
+                </div>
+            </div>
+            <div class="info__company">
+                <div class="info__title">
+                    <h4>
+                        company
+                    </h4>
+                    <ul class="info__list">
+                        <li><a href="#" class="info__link-first">Home</a></li>
+                        <li><a href="#" class="info__link">Shop</a></li>
+                        <li><a href="#" class="info__link">About</a></li>
+                        <li><a href="#" class="info__link">How It Works</a></li>
+                        <li><a href="#" class="info__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info__information">
+                <div class="info__title">
+                    <h4>
+                        information
+                    </h4>
+                    <ul class="info__list">
+                        <li><a href="#" class="info__link-first">Tearms & Condition</a></li>
+                        <li><a href="#" class="info__link">Privacy Policy</a></li>
+                        <li><a href="#" class="info__link">How to Buy</a></li>
+                        <li><a href="#" class="info__link">How to Sell</a></li>
+                        <li><a href="#" class="info__link">Promotion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info__shop">
+                <div class="info__title">
+                    <h4>
+                        SHOP CATEGORY
+                    </h4>
+                    <ul class="info__list">
+                        <li><a href="#" class="info__link-first">Men</a></li>
+                        <li><a href="#" class="info__link">Women</a></li>
+                        <li><a href="#" class="info__link">Child</a></li>
+                        <li><a href="#" class="info__link">Apparel</a></li>
+                        <li><a href="#" class="info__link">Brows All</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        </main>
 <footer class="footer">
     <div class="container">
         <div class="footer__row">
