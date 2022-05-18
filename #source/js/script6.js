@@ -5,4 +5,4 @@ let arrow4 = document.querySelector('.arrow-4');
 select4.onclick = function () {
     submenu4.classList.toggle('open');
     arrow4.classList.toggle('active');
-}
+};

@@ -1,0 +1,6 @@
+@media (max-width: 1168px) {
+  .gallery__items {
+    -ms-grid-rows: (1fr)[6];
+    grid-template-rows: repeat(6, 1fr);
+  }
+}

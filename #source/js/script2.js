@@ -25,4 +25,3 @@ $(document).ready(function () {
         centerMode: true,
     });
 });
-

@@ -8,6 +8,18 @@
 //         thisArrow.classList.toggle('active');
 //     });
 // }
+let header__burger = document.querySelector('.header__burger');
+let header__button = document.querySelector('.header__button');
+let header_menu = document.querySelector('.header__menu');
+let back = document.querySelector('body');
+let header__list = document.querySelector('.header__list');
+
+header__burger.onclick = function () {
+    header__burger.classList.toggle('active');
+    header__button.classList.toggle('active');
+    header_menu.classList.toggle('active');
+    back.classList.toggle('lock');
+}
 
 let select = document.querySelector('.header__select');
 let submenu = document.querySelector('.submenu');
