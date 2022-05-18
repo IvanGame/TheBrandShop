@@ -113,6 +113,7 @@ body {
         display: flex;
         position: relative;
         padding: 5px 28px 5px 15px;
+        border-radius: 3px;
         background-color: $pink;
     }
 
@@ -182,6 +183,15 @@ body {
         border: 1px solid #ececec;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
     }
+
+    &__carttt {
+        display: flex;
+        align-self: center;
+    }
+
+    &__burger {
+        display: none;
+    }
 }
 
 .submenu {
@@ -221,6 +231,10 @@ body {
         font-weight: 400;
         letter-spacing: 0.025em;
         color: #4f4f4f;
+    }
+
+    &__link:hover {
+        color: $pink;
     }
 }
 
@@ -317,6 +331,7 @@ body {
     position: relative;
 
     &__window {
+        display: none;
         pointer-events: none;
         z-index: 5;
         position: absolute;
@@ -388,6 +403,7 @@ body {
 }
 
 .cart__window.open {
+    display: block;
     pointer-events: all;
     opacity: 1;
 }
@@ -490,6 +506,7 @@ body {
 
 .arrow.active {
     transform: rotate(-180deg);
+    border-top: 5px solid $pink;
 }
 
 .arrow-2 {
@@ -809,6 +826,8 @@ body {
     &__image::before {
         content: "";
         background-image: url(../img/attr_mask.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         z-index: 2;
         width: 100%;
         height: 100%;
@@ -1050,6 +1069,11 @@ body {
         width: 440px;
     }
 
+    &__links {
+        padding-left: 15px;
+        display: flex;
+    }
+
     &__text {
         font-size: 14px;
         line-height: 24px;
@@ -1096,6 +1120,7 @@ body {
     }
 
     &__information {
+        padding: 0 30px;
     }
 
     &__shop {
@@ -1103,12 +1128,13 @@ body {
 }
 
 .footer {
-    height: 80px;
     background-color: #e6e6e6;
 
     &__row {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     &__rights {
@@ -1121,5 +1147,31 @@ body {
     }
 
     &__icons {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__ico-con {
+        background-color: #fff;
+        margin: 0px 4px;
+    }
+
+    &__ico-con:hover {
+        background-color: $pink;
+    }
+
+    &__ico-con:hover .fa-brands {
+        color: #ffffff;
     }
 }
+
+.fa-brands {
+    padding: 8px 8px;
+    color: #b2b2b2;
+}
+
+.faa {
+    padding: 8px 12px;
+}
+
+@import "media.scss";

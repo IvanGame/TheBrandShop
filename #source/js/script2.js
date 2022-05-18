@@ -20,6 +20,8 @@ select2.onclick = function () {
 
 $(document).ready(function () {
     $('.slider').slick({
-
+        arrows: true,
+        slidesToShow: 1,
+        centerMode: true,
     });
 });
